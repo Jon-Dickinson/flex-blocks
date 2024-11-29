@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Syncopate Bold';
+  src: url('../fonts/Syncopate-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.title {
+  font-family: 'Syncopate Bold', sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  margin: 10px 0 0;
+  text-align: left;
+  width: 100%;
+  line-height: 1;
+}
+
+.intro {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 5px;
+  margin: 10px 0 0;
+  text-align: left;
+  width: 100%;
+}
+
+.ver {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
