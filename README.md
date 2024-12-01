@@ -1,7 +1,7 @@
 
 ![Flex Diagram](./banner.png)
 
-# flex-blocks
+# Flex-blocks
 
 reusable flexbox based naming pattern
 
@@ -13,7 +13,7 @@ npm run start
 
 <br/>
 
-# flex-block types
+# Flex-block types
 
 <br/>
 
@@ -41,7 +41,7 @@ flex items
 
 <br/>
 
-# flex-block modifiers
+# Flex-block modifiers
 
 <br/>
 
