@@ -67,7 +67,7 @@ xmp {
   color: #ffffff;
   width: 100%;
   font-weight: 500;
-  padding: 10px 10px 5px;
+  padding: 10px 0 5px;
   margin-top: 20px;
 }
 
@@ -140,8 +140,6 @@ xmp {
 .if-absolute-center {
   position: absolute;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -150,8 +148,6 @@ xmp {
 .if-relative-center {
   position: relative;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -715,6 +711,10 @@ xmp {
   background-color: #ffffff !important;
 }
 
+.bg-ffffff25 {
+  background-color: #ffffff25 !important;
+}
+
 .border--ffffff {
   border-color: #ffffff !important;
 }
@@ -846,10 +846,6 @@ xmp {
   border: 2px dashed #ffffff !important;
 }
 
-.border-2px-dashed-cyan {
-  border: 2px dashed #ffffff !important;
-}
-
 .border-2px-dashed-blue {
   border: 2px dashed var(--color-blue) !important;
 }
@@ -866,8 +862,12 @@ xmp {
   border: 1px dashed #ffffff !important;
 }
 
-.border-1-white--25 {
+.border-1-white-25 {
   border: 1px solid rgba(255,255,255,0.25) !important;
+}
+
+.border-1-white-75 {
+  border: 1px solid rgba(255,255,255,0.75) !important;
 }
 
 .border-1px-silver {
