@@ -5,18 +5,18 @@
   <title>Flex Blocks</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/flex-blocks.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <!-- <link rel="stylesheet" href="css/flex-blocks.css">
+  <link rel="stylesheet" href="css/custom.css"> -->
 </head>
-<body>
+<body class="bg-color-blue">
   <div class="if-base-wrapper direction--column h-100">
     <div class="vertical-inline-flex golden--618-height bg-color-blue">
-      <div class="flex-mid-container justify--space-between align--center max-w-75-perc h-100">
+      <div class="flex-mid-container justify--space-between align--center justify--center-under--1024 column-under--1024 max-w-75-perc h-100">
         <div class="if-content-panel direction--column">
-          <h1 class="title">
+          <h1 class="title t-align--c-under--1024">
             FLEX BLOCKS
           </h1>
-          <p class="intro">
+          <p class="intro t-align--c-under--1024">
             Flexbox based custom reusable naming pattern
           </p>
         </div>
@@ -29,9 +29,177 @@
       </div>
     </div>
     <div class="vertical-inline-flex golden--382-height bg-ffffff">
-      <div class="flex-mid-container justify--flex-start align--center max-w-75-perc h-100">
+      <div class="flex-mid-container justify--flex-start align--center justify--center-under--1024 max-w-75-perc h-100">
         <div class="ib-content-panel">
           <img class="w-100-perc" src="images/flex-diagram.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="if-base-wrapper direction--column">
+    <div class="vertical-inline-flex">
+      <div class="flex-mid-container justify--space-between align--center justify--center-under--1024 column-under--1024 max-w-75-perc">
+        <div class="vertical-inline-flex margin-t-200">
+          <div class="if-content-panel direction--column">
+            <h1 class="sub-title t-align--c-under--1024">
+              Containing Blocks
+            </h1>
+            <p class="intro t-align--c-under--1024">
+              The class name describes the layout mode and how the containing block should be used or how child elements will be positioned.
+            </p>
+          </div>
+          <div class="if-content-panel direction--column">
+            <div class="ib-content-panel margin-t-50">
+              <img class=" " src="images/flex-block-1.png">
+            </div>
+          </div>
+          <div class="if-content-panel direction--column">
+<xmp>
+.if-base-wrapper {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+}
+
+.flex-mid-container {
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.vertical-inline-flex {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.horizontal-inline-flex {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+}
+</xmp>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="if-base-wrapper direction--column">
+    <div class="vertical-inline-flex bg-color-blue">
+      <div class="flex-mid-container justify--space-between align--center justify--center-under--1024 column-under--1024 max-w-75-perc">
+        <div class="vertical-inline-flex margin-t-200">
+          <div class="if-content-panel direction--column">
+            <h1 class="sub-title t-align--c-under--1024">
+              Children of Containing Blocks
+            </h1>
+            <p class="intro t-align--c-under--1024">
+              The class name describes the layout mode and it indicates that it should be used to contain content.
+            </p>
+          </div>
+          <div class="if-content-panel direction--column">
+            <div class="ib-content-panel margin-t-50">
+              <img class=" " src="images/flex-block-2.png">
+            </div>
+          </div>
+          <div class="if-content-panel direction--column">
+<xmp>
+.if-content-panel {
+  position: relative;
+  display: inline-flex;
+}
+
+.flex-content-panel {
+  position: relative;
+  display: flex;
+}
+
+/* for images CSS2 */
+
+.ib-content-panel {
+  position: relative;
+  display: inline-block;
+}
+</xmp>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="if-base-wrapper direction--column">
+    <div class="vertical-inline-flex bg-color-blue">
+      <div class="flex-mid-container justify--space-between align--center justify--center-under--1024 column-under--1024 max-w-75-perc">
+        <div class="vertical-inline-flex margin-t-200">
+          <div class="if-content-panel direction--column">
+            <h1 class="sub-title t-align--c-under--1024">
+              Modifier classes
+            </h1>
+            <p class="intro t-align--c-under--1024">
+              Contains one property that is compatible with other properties and the class name describes the property and its value.
+            </p>
+          </div>
+    
+          <div class="if-content-panel direction--column">
+            <div class="ib-content-panel margin-t-50">
+              <img class=" " src="images/flex-block-3.png">
+            </div>
+          </div>
+          <div class="if-content-panel direction--column">
+<xmp>
+.direction--row {
+  flex-direction: row !important;
+}
+
+.direction--column {
+  flex-direction: column !important;
+}
+</xmp>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="if-base-wrapper direction--column">
+    <div class="vertical-inline-flex bg-color-blue">
+      <div class="flex-mid-container justify--space-between align--center justify--center-under--1024 column-under--1024 max-w-75-perc">
+        <div class="vertical-inline-flex margin-t-200 margin-b-100">
+        
+          <div class="if-content-panel direction--column margin-t-50">
+            <h1 class="sub-title t-align--c-under--1024">
+              Utility classes
+            </h1>
+            <p class="intro t-align--c-under--1024">
+              A utility class contains one property and the class name describes the property and its value.
+            </p>
+          </div>
+          <div class="if-content-panel direction--column">
+            <div class="ib-content-panel margin-t-50">
+              <img class=" " src="images/flex-block-3.png">
+            </div>
+          </div>
+          <div class="if-content-panel direction--column">
+<xmp>
+.margin-t-5 {
+  margin-top: 5px !important;
+}
+
+.border-radius-4 {
+  border-radius: 4px !important;
+}
+
+.border-1px-ffffff {
+  border: 1px solid #ffffff !important;
+}
+
+.top-10 {
+  top: 10px !important;
+}
+</xmp>
+          </div>
         </div>
       </div>
     </div>
